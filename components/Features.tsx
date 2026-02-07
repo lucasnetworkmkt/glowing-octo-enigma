@@ -7,7 +7,7 @@ const features: ServiceItem[] = [
   { icon: Zap, title: 'Ultra Rápidos', description: 'Otimizados para carregar em instantes e não perder visitas.' },
   { icon: Target, title: 'Foco em Conversão', description: 'Estratégia visual para transformar cliques em vendas.' },
   { icon: Search, title: 'SEO Incluso', description: 'Otimização básica para você ser encontrado no Google.' },
-  { icon: Puzzle, title: 'Integrações que você precisa', description: 'Sistema de agendamentos por WhatsApp, pagamentos e muito mais.' },
+  { icon: Puzzle, title: 'Integrações que você precisa', description: 'Sistema de agendamentos, pedidos, WhatsApp integrado, dashboard e muito mais.' },
   { icon: Server, title: 'Hospedagem Inclusa', description: 'Servidores seguros e estáveis sem custo extra.' },
   { icon: Link, title: 'Domínio Incluso', description: 'Registramos seu nome na internet (www.seu.com.br).' },
 ];
