@@ -17,32 +17,25 @@ const WhyChooseUs: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-16">
           
-          {/* Abstract Graphic Side (No Photo) */}
+          {/* Visual Side */}
           <div className="w-full md:w-1/2">
             <div className="relative">
               <div className="absolute -inset-4 bg-brand-purple/20 rounded-2xl transform rotate-3"></div>
               
-              {/* Abstract Card Container */}
-              <div className="relative rounded-2xl shadow-2xl w-full h-[500px] bg-gradient-to-br from-brand-gray to-gray-200 overflow-hidden flex items-center justify-center">
+              {/* Card Container */}
+              <div className="relative rounded-2xl shadow-2xl w-full h-[400px] md:h-[500px] bg-gradient-to-br from-brand-gray to-gray-200 overflow-hidden flex items-center justify-center p-6">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#6C63FF_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 
-                {/* Abstract Shape */}
+                {/* Background Blobs */}
                 <div className="w-40 h-40 bg-brand-purple/10 rounded-full blur-3xl absolute top-10 left-10"></div>
                 <div className="w-40 h-40 bg-brand-green/10 rounded-full blur-3xl absolute bottom-10 right-10"></div>
                 
-                {/* Center Icon/Graphic */}
-                <div className="relative z-10 w-32 h-32 rounded-2xl bg-white shadow-xl flex items-center justify-center transform -rotate-6 transition-transform hover:rotate-0 duration-500">
-                    <div className="w-20 h-2 bg-brand-gray rounded-full mb-2"></div>
-                    <div className="w-14 h-2 bg-brand-gray rounded-full mb-2"></div>
-                    <div className="w-10 h-2 bg-brand-purple rounded-full"></div>
+                {/* Main Content: 100% Card */}
+                <div className="relative z-10 bg-white p-8 md:p-10 rounded-2xl shadow-xl max-w-sm text-center border border-gray-100 transform transition-transform hover:scale-105 duration-500">
+                  <p className="font-heading font-bold text-brand-blue text-5xl md:text-6xl mb-4">100%</p>
+                  <p className="text-brand-text text-lg font-medium">Foco na satisfação e no resultado do seu negócio.</p>
                 </div>
-              </div>
-
-              {/* Float Card */}
-              <div className="absolute bottom-8 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden lg:block border border-gray-100">
-                <p className="font-heading font-bold text-brand-blue text-4xl mb-2">100%</p>
-                <p className="text-brand-text text-sm">Foco na satisfação e no resultado do seu negócio.</p>
               </div>
             </div>
           </div>
