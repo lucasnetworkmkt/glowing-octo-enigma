@@ -18,30 +18,20 @@ const WhyChooseUs: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-16">
           
           {/* Visual Side */}
-          <div className="w-full md:w-1/2">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-brand-purple/20 rounded-2xl transform rotate-3"></div>
-              
-              {/* Card Container */}
-              <div className="relative rounded-2xl shadow-2xl w-full h-[400px] md:h-[500px] bg-gradient-to-br from-brand-gray to-gray-200 overflow-hidden flex items-center justify-center p-6">
-                {/* Background Pattern - Usando style para garantir estabilidade */}
-                <div 
-                  className="absolute inset-0 opacity-10"
-                  style={{
-                    backgroundImage: 'radial-gradient(#6C63FF 1px, transparent 1px)',
-                    backgroundSize: '20px 20px'
-                  }}
-                ></div>
-                
-                {/* Background Blobs */}
-                <div className="w-40 h-40 bg-brand-purple/10 rounded-full blur-3xl absolute top-10 left-10"></div>
-                <div className="w-40 h-40 bg-brand-green/10 rounded-full blur-3xl absolute bottom-10 right-10"></div>
-                
-                {/* Main Content: 100% Card */}
-                <div className="relative z-10 bg-white p-8 md:p-10 rounded-2xl shadow-xl max-w-sm text-center border border-gray-100 transform transition-transform hover:scale-105 duration-500">
-                  <p className="font-heading font-bold text-brand-blue text-5xl md:text-6xl mb-4">100%</p>
-                  <p className="text-brand-text text-lg font-medium">Foco na satisfação e no resultado do seu negócio.</p>
-                </div>
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="relative w-full max-w-md aspect-square flex items-center justify-center">
+              {/* Decorative blobs behind */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-purple/10 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-green/10 rounded-full blur-3xl -z-10"></div>
+
+              {/* Main Card */}
+              <div className="bg-white p-10 md:p-12 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 text-center relative z-10 transform transition-transform hover:scale-105 duration-500">
+                  <h3 className="font-heading font-bold text-brand-blue text-6xl md:text-7xl mb-4 tracking-tight">
+                    100%
+                  </h3>
+                  <p className="text-brand-text text-xl font-medium leading-relaxed">
+                    Foco na satisfação e no resultado do seu negócio.
+                  </p>
               </div>
             </div>
           </div>
