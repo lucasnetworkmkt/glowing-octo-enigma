@@ -10,7 +10,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 const App: React.FC = () => {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen">
       <Header />
       <Hero />
       <TargetAudience />
