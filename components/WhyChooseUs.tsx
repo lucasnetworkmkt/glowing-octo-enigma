@@ -24,8 +24,14 @@ const WhyChooseUs: React.FC = () => {
               
               {/* Card Container */}
               <div className="relative rounded-2xl shadow-2xl w-full h-[400px] md:h-[500px] bg-gradient-to-br from-brand-gray to-gray-200 overflow-hidden flex items-center justify-center p-6">
-                {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#6C63FF_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                {/* Background Pattern - Usando style para garantir estabilidade */}
+                <div 
+                  className="absolute inset-0 opacity-10"
+                  style={{
+                    backgroundImage: 'radial-gradient(#6C63FF 1px, transparent 1px)',
+                    backgroundSize: '20px 20px'
+                  }}
+                ></div>
                 
                 {/* Background Blobs */}
                 <div className="w-40 h-40 bg-brand-purple/10 rounded-full blur-3xl absolute top-10 left-10"></div>
