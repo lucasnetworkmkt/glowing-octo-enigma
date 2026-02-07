@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import { Rocket, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -24,24 +24,12 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer Links & Info */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-gray-800 pb-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 border-b border-gray-800 pb-10">
           <div className="flex items-center gap-2">
             <div className="bg-white/10 p-2 rounded-lg">
               <Rocket className="w-6 h-6 text-brand-purple" />
             </div>
             <span className="text-2xl font-heading font-bold">Nexora Web</span>
-          </div>
-
-          <div className="flex gap-6">
-            <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-purple transition-colors">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-purple transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-purple transition-colors">
-              <Facebook className="w-5 h-5" />
-            </a>
           </div>
         </div>
 
