@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-blue/95 backdrop-blur-sm py-4 shadow-xl' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-blue/95 backdrop-blur-sm py-4 shadow-xl' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Nav */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-brand-blue border-t border-gray-800 shadow-xl">
+          <div className="md:hidden absolute top-full left-0 w-full bg-brand-blue border-t border-gray-800 shadow-xl max-h-[85vh] overflow-y-auto">
             <div className="flex flex-col p-6 gap-4">
               {NAVIGATION_LINKS.map((link) => (
                 <a 
