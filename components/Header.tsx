@@ -15,7 +15,13 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-blue/95 backdrop-blur-sm py-4 shadow-xl' : 'bg-transparent py-6'}`}>
+    <nav 
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 transform-gpu ${
+        isScrolled 
+          ? 'bg-brand-blue/95 backdrop-blur-sm shadow-xl py-4' 
+          : 'bg-transparent py-4 md:py-6'
+      }`}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -49,7 +55,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-white"
+            className="md:hidden text-white p-1"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
