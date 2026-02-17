@@ -22,9 +22,9 @@ const Button: React.FC<ButtonProps> = ({
   const baseStyles = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-heading font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg";
   
   const variants = {
-    primary: "bg-brand-purple hover:bg-opacity-90 text-white hover:shadow-brand-purple/40",
-    success: "bg-brand-green hover:bg-opacity-90 text-white hover:shadow-brand-green/40",
-    outline: "border-2 border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white"
+    primary: "bg-brand-accent hover:bg-white text-brand-blue hover:text-brand-blue hover:shadow-neon",
+    success: "bg-brand-green hover:bg-white text-brand-blue hover:shadow-brand-green/40",
+    outline: "border-2 border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-brand-blue hover:shadow-neon"
   };
 
   const widthClass = fullWidth ? "w-full" : "";
