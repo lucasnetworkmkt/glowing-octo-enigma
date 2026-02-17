@@ -21,3 +21,18 @@ export interface AudienceItem {
   label: string;
   icon: LucideIcon;
 }
+
+export interface StrategyItem {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}
+
+export interface PortfolioItem {
+  tag: string;
+  name: string;
+  description: string;
+  services: string[];
+  imageUrl: string;
+  link: string;
+}
