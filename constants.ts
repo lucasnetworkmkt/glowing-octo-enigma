@@ -14,14 +14,15 @@ export const getWhatsAppLink = (message: string = WHATSAPP_MESSAGE) => {
 export const NAVIGATION_LINKS = [
   { name: 'Início', href: '#hero' },
   { name: 'Para Quem', href: '#audience' },
+  { name: 'Estratégia', href: '#strategy' },
   { name: 'Serviços', href: '#services' },
+  { name: 'Portfólio', href: '#portfolio' },
   { name: 'Processo', href: '#process' },
-  { name: 'Vantagens', href: '#why-us' },
 ];
 
 export const COLORS = {
-  primary: '#0F1C2E',
-  secondary: '#6C63FF',
+  primary: '#020024',
+  secondary: '#00D4FF',
   success: '#2ECC71',
   background: '#F4F6F8',
   text: '#5F6C7B',
