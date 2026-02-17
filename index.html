@@ -15,8 +15,8 @@
           extend: {
             colors: {
               brand: {
-                blue: '#0F1C2E',
-                purple: '#6C63FF',
+                blue: '#020024', // Novo fundo escuro
+                accent: '#00D4FF', // Novo destaque neon (substitui purple)
                 green: '#2ECC71',
                 gray: '#F4F6F8',
                 text: '#5F6C7B',
@@ -25,6 +25,9 @@
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
               heading: ['Poppins', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon': '0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3)',
             }
           }
         }
